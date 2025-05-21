@@ -1,12 +1,12 @@
 # codebasics ML course: codebasics.io, all rights reserverd
 
 import pandas as pd
-import joblib
+from joblib import load
 
-model_young = joblib.load("model_young.joblib")
-model_rest = joblib.load("model_rest.joblib")
-scaler_young = joblib.load("scaler_young.joblib")
-scaler_rest = joblib.load("scaler_rest.joblib")
+model_young = load("model_young.joblib")
+model_rest = load("model_rest.joblib")
+scaler_young = load("scaler_young.joblib")
+scaler_rest = load("scaler_rest.joblib")
 
 def calculate_normalized_risk(medical_history):
     risk_scores = {
