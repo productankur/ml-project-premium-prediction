@@ -1,7 +1,7 @@
 # codebasics ML course: codebasics.io, all rights reserverd
 
 import pandas as pd
-from joblib import load
+import joblib
 
 model_young = joblib.load("model_young.joblib")
 model_rest = joblib.load("model_rest.joblib")
